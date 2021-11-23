@@ -1,0 +1,21 @@
+{
+  "name": "@ds.e/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/normalize-scss"
+    ]
+  },
+  "scripts": {
+    "build": "yarn lerna run build"
+  }
+}
