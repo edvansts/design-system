@@ -3,9 +3,15 @@
 .dse-button-container {
   display: flex;
 
-
   background: $btn-primary-bg;
   color: $btn-primary-color;
   border: none;
-  padding: map-get($spacing, 'xxxs' );
+  padding: map-get($spacing, 'xxxs');
+  cursor: pointer;
+  transition: filter, border 0.2s;
+  box-shadow: $elevation;
+  
+  &:hover {
+    filter: brightness(0.9);
+  }
 }
