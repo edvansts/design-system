@@ -1,0 +1,72 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Mixins                                   */
+/* -------------------------------------------------------------------------- */
+
+/**
+ *
+ * Helpful reusable function-like things that will be used to implement
+ * styles for components.
+ *
+ */
+
+@mixin mobile {
+  @media (max-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin margin-top($value) {
+  margin-top: map-get($spacing, $value);
+}
+
+@mixin margin-left($value) {
+  margin-left: map-get($spacing, $value);
+}
+
+@mixin padding-top($value) {
+  padding-top: map-get($spacing, $value);
+}
+
+// Example
+
+// .body {
+//     font-size: 12px;
+
+//     @include mobile {
+//         font-size: 14px;
+//     }
+
+//     @include tablet {
+//         font-size: 14px;
+//     }
+
+//     @include laptop {
+//         font-size: 15px;
+//     }
+
+//     @include desktop {
+//         font-size: 16px;
+//     }
+
+//     @include margin-top('md'); margin-top: 1.5rem;
+
+//     @include padding-top('xxs'); padding-left: 0.5rem;
+// }
