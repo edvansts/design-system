@@ -1,10 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Button } from "@ds.e/react";
-import "@ds.e/scss/lib/Button.css";
+import App from "./App";
 
-ReactDOM.render(
-  <Button className="dse-button-container" label="Example Button" />,
-  document.querySelector("#root")
-);
+ReactDOM.render(<App />, document.querySelector("#root"));
