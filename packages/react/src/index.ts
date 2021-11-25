@@ -1,8 +1,8 @@
 import Button, { ButtonProps } from "./atoms/Button";
 import Color, { ColorProps } from "./atoms/Color";
-import Spacing, { SpacingTypes } from "./foundation/Spacing";
 import Image, { ImageProps } from "./atoms/Image";
+import Text, { TextProps } from "./atoms/Text";
 
-export { Button, Color, Spacing, Image };
+export { Button, Color, Image, Text };
 
-export type { ButtonProps, ColorProps, SpacingTypes, ImageProps };
+export type { ButtonProps, ColorProps, ImageProps, TextProps };

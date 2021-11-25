@@ -2,10 +2,17 @@
 
 @each $size, $value in $spacing {
     .dse-width-#{$size} {
-        width: $value
+        width: $value;
     }
 
     .dse-height-#{$size} {
-        height: $value
+        height: $value;
     }
 }
+
+@each $size, $value in $font-sizes {
+    .dse-font-size-#{$size} {
+        font-size: $value;
+    }
+}
+

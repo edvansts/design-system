@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Color, Image } from "@ds.e/react";
+import { Color, Image, Text } from "@ds.e/react";
 import "@ds.e/scss/lib/Utilities.css";
 
 export default function App() {
@@ -14,6 +14,7 @@ export default function App() {
         width="xxxl"
         height="xxxl"
       />
+      <Text size="md">Hello guys</Text>
     </div>
   );
 }
