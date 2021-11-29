@@ -7,7 +7,7 @@ export interface TextProps {
 }
 
 function Text({ size = "md", children }: TextProps) {
-  const className = `dse-font-size-${size}`;
+  const className = `dse-text dse-font-size-${size}`;
   return <p className={className}>{children}</p>;
 }
 

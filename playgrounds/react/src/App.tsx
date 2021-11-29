@@ -1,7 +1,9 @@
 import React from "react";
 
-import { Color, Image, Text } from "@ds.e/react";
+import { Color, Image, Text, Margin } from "@ds.e/react";
 import "@ds.e/scss/lib/Utilities.css";
+import "@ds.e/scss/lib/Margin.css";
+import "@ds.e/scss/lib/Text.css";
 
 export default function App() {
   return (
@@ -14,7 +16,11 @@ export default function App() {
         width="xxxl"
         height="xxxl"
       />
-      <Text size="md">Hello guys</Text>
+      <Margin space="xl">
+        <Text size="xl">Hello guys</Text>
+      </Margin>
+
+      <Text size="md">Hello world</Text>
     </div>
   );
 }

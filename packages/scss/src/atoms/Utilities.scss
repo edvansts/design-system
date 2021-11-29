@@ -10,9 +10,5 @@
     }
 }
 
-@each $size, $value in $font-sizes {
-    .dse-font-size-#{$size} {
-        font-size: $value;
-    }
-}
+
 

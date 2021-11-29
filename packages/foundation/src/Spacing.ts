@@ -1,4 +1,6 @@
 const spaces = {
+  none: "none",
+  // 0px
   xxxs: "xxxs",
   // 4px
   xxs: "xxs",
