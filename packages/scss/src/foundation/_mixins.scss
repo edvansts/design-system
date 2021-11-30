@@ -45,6 +45,18 @@
   padding-top: map-get($spacing, $value);
 }
 
+@mixin padding($space: 'md') {
+  padding: map-get($spacing, $space)
+}
+
+@mixin margin($space: 'md') {
+  margin: map-get($spacing, $space)
+}
+
+@mixin shadow($value: 'base') {
+  box-shadow: map-get($shadows, $value);
+}
+
 // Example
 
 // .body {

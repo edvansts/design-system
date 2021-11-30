@@ -1,9 +1,28 @@
 import React from "react";
 
-import { Color, Image, Text, Margin } from "@ds.e/react";
+import { Color, Image, Text, Margin, Select } from "@ds.e/react";
 import "@ds.e/scss/lib/Utilities.css";
 import "@ds.e/scss/lib/Margin.css";
 import "@ds.e/scss/lib/Text.css";
+import "@ds.e/scss/lib/Select.css";
+
+const options = [
+  {
+    label: "Strict Black",
+    value: "strict-black",
+    key: "strict-black",
+  },
+  {
+    label: "Heavenly Green",
+    value: "heavenly-green",
+    key: "heavenly-green",
+  },
+  {
+    label: "Sweet Pink",
+    value: "sweet-pink",
+    key: "sweet-pink",
+  },
+];
 
 export default function App() {
   return (
@@ -20,7 +39,13 @@ export default function App() {
         <Text size="xl">Hello guys</Text>
       </Margin>
 
-      <Text size="md">Hello world</Text>
+      <Select
+        options={options}
+        onOptionSelected={(option) => console.log(option)}
+        renderOption={({ getOptionRecommendedProps, option }) => (
+          <p {...getOptionRecommendedProps()}>{option.label}</p>
+        )}
+      />
     </div>
   );
 }
