@@ -43,7 +43,7 @@ export default function App() {
         options={options}
         onOptionSelected={(option) => console.log(option)}
         renderOption={({ getOptionRecommendedProps, option }) => (
-          <p {...getOptionRecommendedProps()}>{option.label}</p>
+          <span {...getOptionRecommendedProps()}>{option.label}</span>
         )}
       />
     </div>

@@ -58,7 +58,7 @@
 
         @include padding('xs');
 
-        &:hover {
+        &--hightlighted {
             background-color: $form-bg-color-hover;
         }
 
