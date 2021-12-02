@@ -154,6 +154,7 @@ function Select({
   return (
     <div className="dse-select">
       <button
+        data-testid="DseSelectButton"
         onKeyDown={onButtonKeyDown}
         className="dse-select__label"
         onClick={toggleSelectOpened}
