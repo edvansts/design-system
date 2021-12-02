@@ -73,7 +73,7 @@ describe("Select component", () => {
     userEvent.click(screen.getByTestId("DseSelectButton"));
     userEvent.click(screen.getByTestId(options[1].key));
 
-    expect(onOptionSelected).toBeCalled();
+    expect(onOptionSelected).toBeCalledWith(options[1], 1);
   });
 
   it("the button label changes to the selected option label", () => {
