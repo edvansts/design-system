@@ -163,7 +163,7 @@ function Select({
         aria-expanded={isOpen ?? undefined}
         aria-controls="dse-select-list"
       >
-        <Text>{placeholderText}</Text>
+        <Text size="lg">{placeholderText}</Text>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
