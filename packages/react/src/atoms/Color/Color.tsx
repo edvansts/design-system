@@ -3,7 +3,7 @@ import { SpacingTypes } from "@ds.e/foundation";
 
 export interface ColorProps {
   hexCode: string;
-  children: ReactNode;
+  children?: ReactNode;
   width?: SpacingTypes;
   height?: SpacingTypes;
 }

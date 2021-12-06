@@ -23,7 +23,28 @@ const options = [
 ];
 
 export default {
-  title: "Select",
+  title: "Molecules | Select",
 };
 
 export const Default = () => <Select options={options} />;
+
+export const RenderOption = () => {
+  return (
+    <Select
+      options={options}
+      renderOption={({ getOptionRecommendedProps, option, isSelected }) => (
+        <span {...getOptionRecommendedProps()}>
+          {option.label} {isSelected ? "SELECTED" : ""}
+        </span>
+      )}
+    />
+  );
+};
+
+export const CustomLabel = () => {
+  return <Select options={options} placeholder="Select a color" />;
+};
+
+export const OnOptionSelected = () => {
+  return <Select options={options} />;
+};

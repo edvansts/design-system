@@ -1,4 +1,10 @@
-const fontSizes = {
+const fontSizes: {
+  xs: "xs"; // 12px
+  sm: "sm"; // 0.875rem
+  md: "md"; // 16px
+  lg: "lg"; // 18px
+  xl: "xl"; // 24px
+} = {
   xs: "xs", // 12px
   sm: "sm", // 0.875rem
   md: "md", // 16px
