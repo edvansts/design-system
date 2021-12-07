@@ -18,5 +18,8 @@
     "dev": "yarn build -w",
     "test": "jest",
     "test:watch": "yarn test --watch"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

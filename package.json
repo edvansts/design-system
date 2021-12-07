@@ -21,5 +21,8 @@
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
     "test:watch": "yarn lerna run test:watch"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

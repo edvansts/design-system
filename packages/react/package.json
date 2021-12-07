@@ -33,5 +33,8 @@
     "storybook:start": "start-storybook",
     "storybook:build": "build-storybook",
     "chromatic": "chromatic"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

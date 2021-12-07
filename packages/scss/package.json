@@ -31,5 +31,8 @@
   "lint-staged": {
     "*.scss": "yarn lint:fix"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Edvan de Matos <edvan.stt02@gmail.com>"
 }
