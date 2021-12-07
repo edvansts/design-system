@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
@@ -107,19 +107,19 @@ describe("Select component", () => {
   it("snapshot of the options menu open state", () => {});
 
   it("can customize select label", () => {});
+  it("snapshot of the options menu open state", () => {
+    const { asFragment } = render(<Select options={options} />);
+  
+    userEvent.click(screen.getByTestId("DseSelectButton"));
+  
+    expect(asFragment()).toMatchSnapshot();
+  });
+  
+  it("can customize select label", () => {
+    const customLabel = "THIS IS A CUSTOM LABEL";
+    render(<Select options={options} placeholder={customLabel} />);
+  
+    expect(screen.getByText(/THIS IS A CUSTOM LABEL/)).toBeInTheDocument();
+  });
 });
 
-test("snapshot of the options menu open state", () => {
-  const { asFragment } = render(<Select options={options} />);
-
-  userEvent.click(screen.getByTestId("DseSelectButton"));
-
-  expect(asFragment()).toMatchSnapshot();
-});
-
-test("can customize select label", () => {
-  const customLabel = "THIS IS A CUSTOM LABEL";
-  render(<Select options={options} placeholder={customLabel} />);
-
-  expect(screen.getByText(/THIS IS A CUSTOM LABEL/)).toBeInTheDocument();
-});

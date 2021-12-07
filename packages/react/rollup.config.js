@@ -14,5 +14,8 @@ export default {
   },
   plugins: [Ts()],
   preserveModules: true,
-  external: ["react", "@matoss/foundation"],
+  external: [
+    "react",
+    "@matoss/foundation",
+  ],
 };

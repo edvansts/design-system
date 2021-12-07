@@ -4,15 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^17.0.36",
-    "@types/react-dom": "^17.0.11",
-    "parcel-bundler": "^1.12.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "typescript": "^4.5.2"
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.9.7"
   },
   "scripts": {
-    "dev": "parcel --no-cache src/index.html -p 3001 "
+    "dev": "parcel --no-cache src/index.html -p 3001"
   },
   "private": true
 }
