@@ -6,7 +6,6 @@
   "devDependencies": {
     "lerna": "^4.0.0"
   },
-  "private": true,
   "workspaces": {
     "packages": [
       "packages/*",
@@ -20,7 +19,8 @@
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
-    "test:watch": "yarn lerna run test:watch"
+    "test:watch": "yarn lerna run test:watch",
+    "publish": "yarn test && yarn build && yarn lerna publish"
   },
   "publishConfig": {
     "access": "public"
