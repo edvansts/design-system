@@ -28,6 +28,10 @@
       "pre-commit": "lint-staged"
     }
   },
+  "files": [
+    "lib",
+    "src"
+  ],
   "lint-staged": {
     "*.scss": "yarn lint:fix"
   },
