@@ -1,5 +1,5 @@
 {
-  "name": "@ds.e/scss",
+  "name": "@matoss/scss",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
@@ -34,5 +34,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Edvan de Matos <edvan.stt02@gmail.com>"
+  "author": "Edvan de Matos <edvan.stt02@gmail.com>",
+  "gitHead": "a17cdf7e53786b777ca6808a081c3e63fabd4b48"
 }

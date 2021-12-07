@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { FontSizesTypes } from "@ds.e/foundation";
+import { FontSizesTypes } from "@matoss/foundation";
 
 export interface TextProps {
   size?: FontSizesTypes;

@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { SpacingTypes } from "@ds.e/foundation";
+import { SpacingTypes } from "@matoss/foundation";
 
 export interface ColorProps {
   hexCode: string;

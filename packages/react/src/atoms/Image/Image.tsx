@@ -1,5 +1,5 @@
 import React from "react";
-import { SpacingTypes } from "@ds.e/foundation";
+import { SpacingTypes } from "@matoss/foundation";
 
 type ImgElement = React.ImgHTMLAttributes<HTMLImageElement>;
 

@@ -2,8 +2,8 @@ import React from "react";
 
 import { withA11Y } from "@storybook/addon-a11y";
 import Select from "./Select";
-import "@ds.e/scss/lib/global.css";
-import "@ds.e/scss/lib/Select.css";
+import "@matoss/scss/lib/global.css";
+import "@matoss/scss/lib/Select.css";
 
 const options = [
   {
