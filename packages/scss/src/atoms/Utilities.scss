@@ -2,10 +2,13 @@
 
 @each $size, $value in $spacing {
     .dse-width-#{$size} {
-        width: $value
+        width: $value;
     }
 
     .dse-height-#{$size} {
-        height: $value
+        height: $value;
     }
 }
+
+
+

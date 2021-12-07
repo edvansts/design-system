@@ -1,5 +1,5 @@
 {
-  "name": "@ds.e/core",
+  "name": "@matoss/core",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -18,6 +18,11 @@
   },
   "scripts": {
     "build": "yarn lerna run build",
-    "dev": "yarn lerna run dev"
+    "dev": "yarn lerna run dev",
+    "test": "yarn lerna run test",
+    "test:watch": "yarn lerna run test:watch",
+    "publish": "yarn test && yarn build && yarn lerna publish",
+    "test:chromatic": "yarn lerna run test:chromatic",
+    "build:storybook": "yarn build && yarn lerna run build-storybook"
   }
 }

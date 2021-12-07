@@ -1,0 +1,78 @@
+@import 'foundation/all';
+
+.dse-select {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    &__caret {
+        transition: all 250ms ease;
+
+        &--open {
+            transform: rotate(180deg);
+        }
+
+        &--closed {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include padding('xs');
+        border: 1px solid $form-border-color;
+        background-color: $form-bg-color;
+        font-family: $body-font-family;
+
+        cursor: pointer;
+    }
+
+    &__overlay {
+        display: none;
+        
+        @include padding('none');
+        @include margin('none');
+        @include shadow('base');
+
+        list-style-type: none;
+
+        border: 1px solid $form-border-color;
+        background-color: $form-bg-color;
+        z-index: 99;
+
+        position: absolute;
+        width: 100%;
+
+
+        &--open {
+            display: block;
+        }
+    }
+
+
+    &__option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        cursor: pointer;
+        box-sizing: border-box;
+
+        @include padding('xs');
+
+        &--hightlighted {
+            background-color: $form-bg-color-hover;
+        }
+
+        &--select {
+            background-color: $form-bg-color-active;
+            color: $form-color-active;
+
+        }
+    }
+}
+

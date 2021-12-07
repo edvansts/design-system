@@ -84,6 +84,14 @@ $fs-md: 1rem; // 16px
 $fs-lg: 1.125rem; // 18px
 $fs-xl: 1.5rem; // 24px
 
+$font-sizes: (
+  xs: 0.75rem,// 12px
+  sm: 0.875rem,// 0.875rem
+  md: 1rem,// 16px
+  lg: 1.125rem,// 18px
+  xl: 1.5rem,// 24px
+) !default;
+
 /* --------------------------- Heading font sizes --------------------------- */
 
 $h-1: 1.375rem; // 22px
@@ -125,6 +133,8 @@ $breakpoints: (
 /* -------------------------------------------------------------------------- */
 
 $spacing: (
+  none: 0rem,
+  // 0px
   xxxs: 0.25rem,
   // 4px
   xxs: 0.5rem,
@@ -147,3 +157,7 @@ $spacing: (
 
 $elevation: 0 0 2px rgba(0, 0, 0, 0.14), 0 2px 2px rgba(0, 0, 0, 0.12),
   0 1px 3px rgba(0, 0, 0, 0.2);
+
+$shadows: (
+  base: 0px 4px 11px rgba(157, 157, 157, 0.21),
+)

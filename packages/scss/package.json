@@ -1,11 +1,15 @@
 {
-  "name": "@ds.e/scss",
-  "version": "1.0.0",
+  "name": "@matoss/scss",
+  "version": "0.2.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "normalize-scss": "^7.0.1"
   },
+  "files": [
+    "lib",
+    "src"
+  ],
   "devDependencies": {
     "husky": "^4.2.5",
     "lint-staged": "^11.2.6",
@@ -31,5 +35,9 @@
   "lint-staged": {
     "*.scss": "yarn lint:fix"
   },
-  "author": "Edvan de Matos <edvan.stt02@gmail.com>"
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Edvan de Matos <edvan.stt02@gmail.com>",
+  "gitHead": "cab1fe58d9ca1e35c76584719ef0ea8b161e4d97"
 }
