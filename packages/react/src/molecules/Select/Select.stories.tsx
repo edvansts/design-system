@@ -1,5 +1,6 @@
 import React from "react";
 
+import { withA11Y } from "@storybook/addon-a11y";
 import Select from "./Select";
 import "@ds.e/scss/lib/global.css";
 import "@ds.e/scss/lib/Select.css";
@@ -24,6 +25,7 @@ const options = [
 
 export default {
   title: "Molecules | Select",
+  decorators: [withA11Y],
 };
 
 export const Default = () => <Select options={options} />;

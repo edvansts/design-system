@@ -32,6 +32,8 @@
     }
 
     &__overlay {
+        display: none;
+        
         @include padding('none');
         @include margin('none');
         @include shadow('base');
@@ -44,7 +46,11 @@
 
         position: absolute;
         width: 100%;
-        
+
+
+        &--open {
+            display: block;
+        }
     }
 
 

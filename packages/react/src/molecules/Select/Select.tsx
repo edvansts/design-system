@@ -185,77 +185,77 @@ function Select({
         </svg>
       </button>
 
-      {isOpen ? (
-        <ul
-          role="menu"
-          id="dse-select-list"
-          className="dse-select__overlay"
-          style={{ top: overlayTop }}
-        >
-          {options.map((option, index) => {
-            const isSelected = selectedOption?.key == option.key;
-            const isHightlighted = index === hightlightedIndex;
+      <ul
+        role="menu"
+        id="dse-select-list"
+        className={`dse-select__overlay ${
+          isOpen ? "dse-select__overlay--open" : ""
+        }`}
+        style={{ top: overlayTop }}
+      >
+        {options.map((option, index) => {
+          const isSelected = selectedOption?.key == option.key;
+          const isHightlighted = index === hightlightedIndex;
 
-            const ref = optionRefs[index];
+          const ref = optionRefs[index];
 
-            const className = `dse-select__option ${
-              isSelected ? "dse-select__option--select" : ""
-            }
+          const className = `dse-select__option ${
+            isSelected ? "dse-select__option--select" : ""
+          }
             ${isHightlighted ? "dse-select__option--hightlighted" : ""}
             }`;
-            const onClick = () => onOptionSelected(option, index);
-            const key = option.key;
+          const onClick = () => onOptionSelected(option, index);
+          const key = option.key;
 
-            const renderOptionsProps: RenderOptionProps = {
-              option,
-              isSelected,
-              getOptionRecommendedProps: (overrideProps = {}) => ({
-                role: "menuitemradio",
-                "aria-label": option.label,
-                "aria-checked": isSelected ? true : undefined,
-                tabIndex: isHightlighted ? -1 : 0,
-                onKeyDown: onOptionKeyDown,
-                onMouseEnter: () => hightlightOption(index),
-                onMouseLeave: () => hightlightOption(null),
-                ref,
-                className,
-                onClick,
-                key,
-                ...overrideProps,
-              }),
-            };
+          const renderOptionsProps: RenderOptionProps = {
+            option,
+            isSelected,
+            getOptionRecommendedProps: (overrideProps = {}) => ({
+              role: "menuitemradio",
+              "aria-label": option.label,
+              "aria-checked": isSelected ? true : undefined,
+              tabIndex: isHightlighted ? -1 : 0,
+              onKeyDown: onOptionKeyDown,
+              onMouseEnter: () => hightlightOption(index),
+              onMouseLeave: () => hightlightOption(null),
+              ref,
+              className,
+              onClick,
+              key,
+              ...overrideProps,
+            }),
+          };
 
-            if (renderOption) {
-              return renderOption(renderOptionsProps);
-            }
+          if (renderOption) {
+            return renderOption(renderOptionsProps);
+          }
 
-            return (
-              <li {...renderOptionsProps.getOptionRecommendedProps()}>
-                <Text>{option.label}</Text>
+          return (
+            <li {...renderOptionsProps.getOptionRecommendedProps()}>
+              <Text>{option.label}</Text>
 
-                {isSelected ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    width="1rem"
-                    height="1rem"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                ) : null}
-              </li>
-            );
-          })}
-        </ul>
-      ) : null}
+              {isSelected ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  width="1rem"
+                  height="1rem"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              ) : null}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
