@@ -1,17 +1,43 @@
 {
-  "name": "@ds.e/react",
-  "version": "1.0.0",
+  "name": "@matoss/react",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
-    "@types/react": "^17.0.36",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-storysource": "^5.3.19",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.19",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/react": "^17.0.37",
+    "babel-loader": "^8.1.0",
+    "chromatic": "^5.0.0",
+    "jest": "^27.4.3",
     "react": "^17.0.2",
-    "rollup": "^2.60.1",
-    "rollup-plugin-typescript2": "^0.31.1",
-    "typescript": "^4.5.2"
+    "rollup": "^2.60.2",
+    "rollup-plugin-typescript2": "^0.31.1"
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "yarn build --watch"
-  }
+    "dev": "yarn build --watch",
+    "test": "jest",
+    "test:watch": "yarn test --watch",
+    "storybook:start": "start-storybook",
+    "storybook:build": "build-storybook",
+    "chromatic": "chromatic"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "cab1fe58d9ca1e35c76584719ef0ea8b161e4d97"
 }

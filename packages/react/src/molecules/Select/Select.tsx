@@ -1,10 +1,12 @@
 import React, {
-  createRef,
-  ReactNode,
+  useState,
   useEffect,
   useMemo,
+  ReactNode,
+  createRef,
   useRef,
-  useState,
+  RefObject,
+  KeyboardEvent,
 } from "react";
 
 import Text from "../../atoms/Text";
@@ -79,9 +81,7 @@ function Select({
   );
 
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const [optionRefs, setOptionRefs] = useState<React.RefObject<HTMLElement>[]>(
-    []
-  );
+  const [optionRefs, setOptionRefs] = useState<RefObject<HTMLElement>[]>([]);
 
   const overlayTop = useMemo(() => {
     return (buttonRef.current?.offsetHeight ?? 0) + 10;
@@ -116,7 +116,7 @@ function Select({
     setIsOpen((value) => !value);
   }
 
-  function onButtonKeyDown(event: React.KeyboardEvent<HTMLButtonElement>) {
+  function onButtonKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
     event.preventDefault();
 
     if (
@@ -130,7 +130,7 @@ function Select({
     }
   }
 
-  function onOptionKeyDown(event: React.KeyboardEvent<HTMLElement>) {
+  function onOptionKeyDown(event: KeyboardEvent<HTMLElement>) {
     if (event.key == KEY_CODES.ESC) {
       setIsOpen(false);
       return;
