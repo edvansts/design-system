@@ -26,7 +26,7 @@
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
     "test:watch": "yarn lerna run test:watch",
-    "publish": "yarn test && yarn build && lerna publish",
+    "publish": "yarn test && yarn build && yarn lerna publish",
     "test:chromatic": "yarn lerna run test:chromatic",
     "build:storybook": "yarn build && yarn lerna run build-storybook",
     "commit": "yarn git-cz"
