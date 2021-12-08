@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/edvansts/design-system/compare/v0.3.0...v0.4.0) (2021-12-08)
+
+
+### Bug Fixes
+
+* adjust publish script ([f68f7d7](https://github.com/edvansts/design-system/commit/f68f7d777937661086115ef035c5a96443ae0ca2))
+* **docs:** add commit-lint ([dc70359](https://github.com/edvansts/design-system/commit/dc703596ddd042b3de17884ef14adac73fc495c3))
+* **docs:** update comments in packages ([a107d26](https://github.com/edvansts/design-system/commit/a107d267b65ad5cd01ebff1631cb47321a312506))
+
+
+### Features
+
+* add commitizen ([db9bd6b](https://github.com/edvansts/design-system/commit/db9bd6b9bd20518cdd609943faffb6bbaa5b7e7e))
+
+
+
+
+
 # [0.3.0](https://github.com/edvansts/design-system/compare/v0.2.0...v0.3.0) (2021-12-08)
 
 
