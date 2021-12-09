@@ -28,6 +28,6 @@ jobs:
       - name: Visual regression tests
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrest.CHROMATIC_PROJECT_TOKEN }}
-      - run: yarn test:chromatic
+        run: yarn test:chromatic
 
     
