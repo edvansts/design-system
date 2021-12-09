@@ -28,7 +28,7 @@
     "test:watch": "yarn lerna run test:watch",
     "publish": "yarn test && yarn build && yarn lerna publish",
     "test:chromatic": "yarn lerna run test:chromatic",
-    "build:storybook": "yarn build && yarn lerna run build-storybook",
+    "build:storybook": "yarn build && yarn lerna run storybook:build",
     "commit": "yarn git-cz"
   },
   "config": {
