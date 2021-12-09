@@ -21,6 +21,10 @@ const getComponents = () => {
   return allComponents;
 };
 
+try {
+  Fs.mkdirSync(Path.resolve("lib"));
+}catch(erro){}
+
 const compile = (path, fileName) => {
   const result = Sass.renderSync({
     data: Fs.readFileSync(Path.resolve(path)).toString(),
