@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/edvansts/design-system/compare/v0.4.0...v0.4.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* :heavy_plus_sign: add @matoss/scss in package json react ([01dc5d4](https://github.com/edvansts/design-system/commit/01dc5d4fa98628394375ac69542250afae271662))
+* update scss src build folders ([9117ee2](https://github.com/edvansts/design-system/commit/9117ee2125d6dbcb2447fa469b5a17687aad1fb5))
+
+
+
+
+
 # [0.4.0](https://github.com/edvansts/design-system/compare/v0.3.0...v0.4.0) (2021-12-08)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@matoss/react",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "main": "lib/index.js",
   "license": "MIT",
   "files": [
@@ -10,7 +10,7 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
-    "@matoss/foundation": "^0.4.0",
+    "@matoss/foundation": "^0.4.1",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-storysource": "^5.3.19",
